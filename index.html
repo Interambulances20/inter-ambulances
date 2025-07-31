@@ -1,88 +1,120 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>INTER AMBULANCES - Site en construction</title>
-  <style>
-    body {
-      background-color: #e6f2f9;
-      color: #002f4b;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
-      padding: 80px 20px;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>INTER AMBULANCES - Site en construction</title>
+<style>
+  /* Reset de base */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
 
-    h1 {
-      font-size: 48px;
-      color: #007acc;
-    }
+  html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #002f4b, #005f8d);
+    color: #f0faff;
+  }
 
-    h2 {
-      font-size: 24px;
-      margin-top: 10px;
-      color: #005f8d;
-    }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    height: 100vh;
+  }
 
-    p {
-      font-size: 20px;
-      margin-top: 30px;
-    }
+  .logo {
+    width: 180px;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 0 10px #00cfffaa);
+  }
 
-    .loader {
-      margin: 50px auto;
-      border: 12px solid #f3f3f3;
-      border-top: 12px solid #007acc;
-      border-radius: 50%;
-      width: 100px;
-      height: 100px;
-      animation: spin 2s linear infinite;
-    }
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #00cfff;
+    text-shadow: 0 0 5px #007accaa;
+  }
 
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    color: #aad8ff;
+  }
 
-    .footer {
-      margin-top: 60px;
-      font-size: 16px;
-      color: #555;
-      line-height: 1.6;
-    }
+  p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+  }
 
-    .footer a {
-      color: #005f8d;
-      text-decoration: none;
-    }
+  .footer {
+    font-size: 1rem;
+    color: #aad8ff;
+    line-height: 1.6;
+  }
 
-    .footer a:hover {
-      text-decoration: underline;
+  .footer a {
+    color: #00cfff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* Animation simple du texte */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
     }
-  </style>
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  h1, h2, p, .footer {
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  h1 {
+    animation-delay: 0.2s;
+  }
+
+  h2 {
+    animation-delay: 0.4s;
+  }
+
+  p {
+    animation-delay: 0.6s;
+  }
+
+  .footer {
+    animation-delay: 0.8s;
+  }
+</style>
 </head>
 <body>
+  <img src="logo-inter-ambulance.png" alt="Logo INTER AMBULANCES" class="logo" />
   <h1>INTER AMBULANCES</h1>
   <h2>🚑 Site en construction 🚑</h2>
-
-  <div class="loader"></div>
-
   <p>
     Société de transport sanitaire basée à Dives-sur-Mer.<br />
     Nous préparons une nouvelle plateforme pour mieux vous servir.<br />
-    Merci de votre patience.
+    Merci de votre patience et de votre confiance.
   </p>
-
   <div class="footer">
     📍 Rue des entreprises, 14160 Dives-sur-Mer<br />
     📞 Contact : <a href="tel:0231241515">02 31 24 15 15</a><br />
-    📧 Email : <a href="mailto:contact@inter-ambulances.com"
-      >contact@inter-ambulances.com</a
-    >
+    📧 Email : <a href="mailto:contact@inter-ambulances.com">contact@inter-ambulances.com</a>
   </div>
 </body>
 </html>
