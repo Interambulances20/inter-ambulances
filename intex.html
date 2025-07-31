@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INTER AMBULANCES - Site en construction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #007acc, #00bfff);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      padding: 80px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.2em;
+      font-weight: 700;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5em;
+      font-weight: 600;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 500px;
+      margin: 0 auto 3em;
+      line-height: 1.5;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    }
+
+    .loader {
+      margin: 0 auto 3em;
+      border: 8px solid rgba(255, 255, 255, 0.3);
+      border-top: 8px solid #ffffff;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      animation: spin 1.8s linear infinite;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .btn {
+      background-color: rgba(255, 255, 255, 0.25);
+      color: white;
+      padding: 12px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+      transition: background-color 0.3s, box-shadow 0.3s;
+      user-select: none;
+    }
+
+    .btn:hover,
+    .btn:focus {
+      background-color: rgba(255, 255, 255, 0.45);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    }
+
+    address {
+      margin-top: 50px;
+      font-style: normal;
+      font-size: 1rem;
+      color: rgba(255, 255, 255, 0.8);
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.5;
+      text-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>INTER AMBULANCES</h1>
+  <h2>🚑 Site en construction 🚑</h2>
+
+  <div class="loader"></div>
+
+  <p>
+    Société de transport sanitaire basée à Dives-sur-Mer.<br />
+    Nous préparons une nouvelle plateforme pour mieux vous servir.<br />
+    Merci de votre patience.
+  </p>
+
+  <div class="contact-buttons">
+    <a href="tel:0231241515" class="btn" aria-label="Téléphone">📞 02 31 24 15 15</a>
+    <a href="mailto:contact@inter-ambulances.com" class="btn" aria-label="Email">✉️ contact@inter-ambulances.com</a>
+  </div>
+
+  <address>
+    📍 Rue des entreprises, 14160 Dives-sur-Mer
+  </address>
+</body>
+</html>
